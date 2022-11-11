@@ -12,7 +12,7 @@
       runs-on: ubuntu-latest
       
       steps:
-        - name: 'testing'
-          run: pwd
-        - name: 'testing2'
-          run: echo kareem
+        - name: 'print'
+          run: ls
+        
+          
