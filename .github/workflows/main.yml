@@ -12,14 +12,12 @@
       runs-on: ubuntu-latest
       
       steps:
-        - name: 'beforeprint'
-          run: ls
 
 
         - uses: actions/checkout@v3
-
-
-        - name: ' afterprint'
-          run: ls
         
+        - name: "docker"
+          run: docker login --username kareemtarek1243 --password dckr_pat_Gifd0BTRmriVyc8gZXiLGPjsZX4
+
+
           
