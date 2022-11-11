@@ -12,7 +12,14 @@
       runs-on: ubuntu-latest
       
       steps:
-        - name: 'print'
+        - name: 'beforeprint'
+          run: ls
+
+
+      - uses: actions/checkout@v3
+
+
+        - name: ' afterprint'
           run: ls
         
           
