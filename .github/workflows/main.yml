@@ -18,6 +18,8 @@
         
         - name: "docker log in"
           run: docker login --username ${{secrets.DOCKER_USER_NAME }} --password ${{secrets.DOCKER_TOKEN }}
-
-
+        - name: "build image"
+          run: docker build -t ${{secrets.DOCKER_USER_NAME }}/myimage .
+        - name: "docker pushing"
+          run: docker push ${{secrets.DOCKER_USER_NAME }}/myimage 
           
