@@ -16,7 +16,7 @@
 
         - uses: actions/checkout@v3
         
-        - name: "docker"
+        - name: "docker log in"
           run: docker login --username ${{secrets.DOCKER_USER_NAME }} --password ${{secrets.DOCKER_TOKEN }}
 
 
